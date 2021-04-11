@@ -12,9 +12,10 @@ const Layout = ({children}) => {
                         font-size: 62.5%;
                     }
                     body {
-                       font-size: 16px;
-                       font-size: 1.6rem;
+                       font-size: 18px;
+                       font-size: 1.8rem;
                        line-height: 1.5;
+                       font-family: "PT Sans", sans-serif;
                        margin: 0;
                     }
                     h1, h2, h3 {
@@ -39,7 +40,7 @@ const Layout = ({children}) => {
                 <link rel="preconnect" href="https://fonts.gstatic.com" />
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=
                     PT+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" />
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/
+                <link href="https://cdnjs.cloudflare.com/ajax/libs/
                     normalize/8.0.1/normalize.min.css" />
             </Helmet>
             <Header />
