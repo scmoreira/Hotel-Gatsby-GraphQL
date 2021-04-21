@@ -15,6 +15,7 @@ const Footer = ({ title }) => {
             css={ css`
                 background-color: #222;
                 padding: 1rem;
+                margin-top: 3rem;
             `}
         >
             <div
