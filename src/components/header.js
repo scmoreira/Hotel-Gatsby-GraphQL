@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 import { css } from "@emotion/react";
 
-import Nav from './nav';
+import Nav from "./nav";
 
 const Header = () => {
     return (

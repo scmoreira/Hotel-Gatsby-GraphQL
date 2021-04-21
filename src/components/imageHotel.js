@@ -1,8 +1,8 @@
-import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
-import BackgroundImage from 'gatsby-background-image';
+import React from "react";
+import { graphql, useStaticQuery } from "gatsby";
+import BackgroundImage from "gatsby-background-image";
 
-import styled from '@emotion/styled';
+import styled from "@emotion/styled";
 
 const BackgroundImg = styled(BackgroundImage)`
     height: 650px;
@@ -37,19 +37,23 @@ const TextImg = styled.div`
 const ImageHotel = () => {
 
     const { image } = useStaticQuery(graphql`
-    query {
-        image: file(relativePath: { eq: "hero.jpg" }) {
-            sharp:childImageSharp {
-                fluid(quality: 90, maxWidth: 1920) {
-                    ...GatsbyImageSharpFluid_withWebp
+        query {
+            image: file(relativePath: { eq: "hero.jpg" }) {
+                sharp:childImageSharp {
+                    fluid(quality: 90, maxWidth: 1920) {
+                        ...GatsbyImageSharpFluid_withWebp
+                    }
                 }
+            }
         }
-      }
-    }
     `);
 
     return (
-        <BackgroundImg tag="section" fluid={image.sharp.fluid} fadeIn="soft">
+        <BackgroundImg
+            tag="section"
+            fluid={image.sharp.fluid}
+            fadeIn="soft"
+        >
             <TextImg>
                 <h1>Welcome to Gatsby Hotel</h1>
                 <p>Your best choice to relax</p>

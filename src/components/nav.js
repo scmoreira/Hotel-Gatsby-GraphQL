@@ -1,7 +1,7 @@
-import React from 'react';
-import { Link } from 'gatsby';
+import React from "react";
+import { Link } from "gatsby";
 
-import styled from '@emotion/styled';
+import styled from "@emotion/styled";
 
 const Navbar = styled.nav`
     display: flex;
