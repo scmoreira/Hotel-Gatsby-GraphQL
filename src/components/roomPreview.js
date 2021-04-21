@@ -11,7 +11,7 @@ const Button = styled(Link)`
     padding: 1rem;
     width: 100%;
     color: #ffffff;
-    background-color: rgba(44,60,80, .85);
+    background-color: #222;
     font-weight: 700;
     text-align: center;
     text-decoration: none;

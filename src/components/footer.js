@@ -3,19 +3,18 @@ import React from "react";
 import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 
-import Nav from "./nav";
-
 const FooterText = styled.p`
     color: #FFF;
     font-size: 2rem;
+    margin: 0 auto;
 `;
 
-const Footer = () => {
+const Footer = ({ title }) => {
     return (
         <footer
             css={ css`
                 background-color: #222;
-                padding: .1rem;
+                padding: 1rem;
             `}
         >
             <div
@@ -26,7 +25,7 @@ const Footer = () => {
                 `}
             >
                 <FooterText>
-                    &copy; { new Date().getFullYear() } Gatsby Hotel. Made by SCM.
+                    &copy; { new Date().getFullYear() } { title }. Made by SCM.
                 </FooterText>
             </div>
         </footer>

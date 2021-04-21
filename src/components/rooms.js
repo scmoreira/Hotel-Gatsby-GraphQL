@@ -27,7 +27,7 @@ const RoomTemplate = ({data: {allDatoCmsRoom: {nodes}} }) => {
     return (
         <Layout>
             <main css={css`
-                    margin: 0 auto;
+                    margin: 0 auto 4rem;
                     max-width: 1200px;
                     width: 95%;
                 `}
