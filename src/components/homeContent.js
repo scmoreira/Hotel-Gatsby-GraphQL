@@ -23,7 +23,6 @@ const HomeText = styled.div`
 `;
 
 const HomeContent = () => {
-
     const info = useStaticQuery(graphql`
         query {
             allDatoCmsPage(filter: { slug: { eq: "home"}}) {
@@ -37,7 +36,6 @@ const HomeContent = () => {
             }
         }
     `);
-
     const { title, image, content } = info.allDatoCmsPage.nodes[0];
 
     return (
