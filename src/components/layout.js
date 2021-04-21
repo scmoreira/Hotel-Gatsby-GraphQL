@@ -1,7 +1,10 @@
 import React, { Fragment } from "react";
-import { Global, css } from "@emotion/react";
 import Helmet from "react-helmet";
+
 import Header from "./header";
+import Footer from "./footer";
+
+import { Global, css } from "@emotion/react";
 
 const Layout = ({children}) => {
     return (
@@ -48,7 +51,8 @@ const Layout = ({children}) => {
                     normalize/8.0.1/normalize.min.css" />
             </Helmet>
             <Header />
-            {children}
+            {children }
+            <Footer />
         </>
     );
 }
