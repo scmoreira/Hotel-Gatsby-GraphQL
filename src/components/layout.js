@@ -10,7 +10,7 @@ import { Global, css } from "@emotion/react";
 const Layout = ({ children }) => {
     
     const seo = useSeo();
-    const { siteName, fallbackSeo: { description, title } } = seo;
+    const { fallbackSeo: { description, title } } = seo;
 
     return (
         <>
@@ -57,7 +57,7 @@ const Layout = ({ children }) => {
                     normalize/8.0.1/normalize.min.css" />
             </Helmet>
             <Header />
-            {children }
+                {children }
             <Footer title={title} />
         </>
     );

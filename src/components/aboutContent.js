@@ -31,7 +31,10 @@ const AboutContent = () => {
 					title
 					content
 					image {
-						gatsbyImageData(layout: CONSTRAINED, width: 1200)
+						gatsbyImageData(
+							layout: CONSTRAINED
+							width: 1200
+						)
 					}
 				}
 			}
@@ -53,7 +56,7 @@ const AboutContent = () => {
 			</h2>
 			<Content>
 				<p>{ content }</p>
-				<GatsbyImage image={ image.gatsbyImageData } alt="hotel" />
+				<GatsbyImage image={ image.gatsbyImageData } alt="hotel pool" />
 			</Content>
 		</>
 	);
