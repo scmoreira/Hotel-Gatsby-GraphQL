@@ -1,14 +1,7 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby hotel
-</h1>
+# Gatsby Hotel
 
-A Hotel site created to practice Gastby.
+A simply Hotel website created to practice Gastby & GraphQL.
+You can see it [here](https://gatsby-hotel-scm.netlify.app/).
 
 ## Technologies used
 
@@ -45,3 +38,5 @@ A Hotel site created to practice Gastby.
     Add the plugin in gastby-config.js file:
     `gatsby-plugin-emotion`
     
+## Made by Silvana Cecilia Moreira
+<img src="./src/images/logo.jpg" />
