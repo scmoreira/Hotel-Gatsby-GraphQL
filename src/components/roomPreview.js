@@ -41,7 +41,7 @@ const RoomPreview = ({ room }) => {
                         { title }
                     </h3>
                     <p>{ content }</p>
-                    <Button to={slug}>More info</Button>
+                    <Button to={slug}>See the room</Button>
                 </div>
             </div>
         </li>
