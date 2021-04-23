@@ -5,6 +5,7 @@ module.exports = {
     title: `Gatsby Hotel`,
     description: `Web created with Gatsby and GraphQL.`,
     author: `SCM`,
+    lang: `en`,
   },
   plugins: [
     `gatsby-plugin-emotion`,
@@ -22,13 +23,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Gatsby Hotel`,
+        short_name: `GH`,
+        description: `Web created with Gatsby and GraphQL.`,
+        lang: `en`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/logo.jpg`,
+        background_color: `#663399`,
+        theme_color: `#663399`,
       },
     },
     {

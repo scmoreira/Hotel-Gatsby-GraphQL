@@ -23,7 +23,6 @@ const RoomList = styled.ul`
 
 const IndexPage = () => {
 	const rooms = useRooms();
-
 	return (
 		<Layout>
 			<ImageHotel />

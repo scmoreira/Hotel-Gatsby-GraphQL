@@ -1,7 +1,8 @@
 import React, { Fragment } from "react";
 import Helmet from "react-helmet";
 
-import useSeo from "../hooks/use-seo";
+import useDatoCmsSeo from "../hooks/use-datocms-seo";
+import useMetadataSeo from "../hooks/use-metadata-seo";
 import Header from "./header";
 import Footer from "./footer";
 
@@ -9,8 +10,10 @@ import { Global, css } from "@emotion/react";
 
 const Layout = ({ children }) => {
     
-    const seo = useSeo();
-    const { fallbackSeo: { description, title } } = seo;
+    const datoCmsSeo = useDatoCmsSeo();
+    const metadataSeo = useMetadataSeo();
+    const { fallbackSeo: { description, title } } = datoCmsSeo;
+    const { lang } = metadataSeo;
 
     return (
         <>
@@ -47,9 +50,11 @@ const Layout = ({ children }) => {
                     }
                 `}
             />
-            <Helmet>
-                <title>{ title }</title>
+            <Helmet
+                htmlAttributes={{lang}}
+            >
                 <meta name="description" content={description} />
+                <title>{ title }</title>
                 <link rel="preconnect" href="https://fonts.gstatic.com" />
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=
                     PT+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" />

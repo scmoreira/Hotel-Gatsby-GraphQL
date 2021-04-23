@@ -23,26 +23,28 @@ const RoomPreview = ({ room }) => {
     const { slug, title, content, image } = room;
 
     return (
-        <div css={css`
-               border: 1px solid #e1e1e1;
-               margin-bottom: 2rem;
-            `}
-        >
-            <GatsbyImage image={ image } alt={ title } />
+        <li>
             <div css={css`
-                   padding: 3rem; 
+                border: 1px solid #e1e1e1;
+                margin-bottom: 2rem;
                 `}
             >
-                <h3 css={css`
-                        font-size: 3rem;
+                <GatsbyImage image={ image } alt={ title } />
+                <div css={css`
+                    padding: 3rem; 
                     `}
                 >
-                    { title }
-                </h3>
-                <p>{ content }</p>
-                <Button to={slug}>More info</Button>
+                    <h3 css={css`
+                            font-size: 3rem;
+                        `}
+                    >
+                        { title }
+                    </h3>
+                    <p>{ content }</p>
+                    <Button to={slug}>More info</Button>
+                </div>
             </div>
-        </div>
+        </li>
     );
 };
 
